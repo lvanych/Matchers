@@ -3,15 +3,14 @@ environment:
 
 branches:
   only:
-    
     - main
 
-cache: node_modules  # кеширование
+cache: node_modules # кеширование
 
 install:
-  - npm install  # команда установки зависимостей
+  - npm install # команда установки зависимостей
 
-build: off  # отключаем встроенную в appveyor систему сборки
+build: off # отключаем встроенную в appveyor систему сборки
 
 test_script:
-  - npm run lint && npm test  # скрипт тестирования
+  - npm run lint && npm test # скрипт тестирования
